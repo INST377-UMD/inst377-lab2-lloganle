@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:#f1c8e9;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Song!</title>
+</head>
+<body>
 
 <h1><p><b>What is your favorite song?</b></p></h1>
 
 <form action="lab2_page2.html" method="GET">
   <div class="input-container">
-    <label for="song">Song Title</label>
+    <label for="song">Song Title:</label>
     <input type="text" id="title" name="songTitle"><br><br>
-    <label for="artist">Artist</label>
+    <label for="artist">Artist:    </label>
     <input type="text" id="artist" name="artistName"><br><br>
     <button type="submit" class="button button1">Submit</button>
-    </div>
-  </form>
+  </div>
+</form>
   
-  <style>
+<style>
+
+    body {
+            background-color: #f1c8e9;;
+            margin: 50;
+            padding: 10;
+        }
 
     label {
         font-size: 18px;
-        display: block;
+        display: inline;
+        margin: 50;
         margin-bottom: 5px;
     }
     input[type="text"] {
         width: 10%;
         padding: 5px;
         border-radius: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #000000;
     }
     .button {
       border: none;
@@ -47,7 +60,7 @@
     }
     
     .button1:hover {
-      background-color: #de61d2;
+      background-color: #7a2a6b;
       color: white;
     }
   </style>
